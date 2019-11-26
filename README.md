@@ -1,6 +1,6 @@
-# Sample code for Issue 114
+# Sample code for HTL Engine Issue 114
 
-This is a simple sample code to demonstrate issue https://github.com/adobe/htlengine/issues/114
+This is a simple sample code to demonstrate issue https://github.com/adobe/htlengine/issues/114 of @adobe/htlengine.
 
 ## Steps of replicating the issue
 
@@ -12,5 +12,3 @@ npm run dev7
 ```bash
 npm run dev8
 ```
-
-
