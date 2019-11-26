@@ -12,7 +12,7 @@ async function run() {
   const template = await compiler.compileToFunction(code);
 
   // create the HTL runtime
-  const runtime = new Runtime();
+  const runtime = new Runtime().withUseDirectory('../modules');
 
   // finally, execute the template. the result is a Document.
   const result = await template(runtime);

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Example</title>
+  </head>
+  <body>
+    <sly data-sly-use.svg="${'com.companyname.classname.SvgUtility' @ svgPath='./assets/icons/circle.svg'}">
+      ${svg.svgItem @ context='unsafe'}
+    </sly>
+  </body>
+</html>

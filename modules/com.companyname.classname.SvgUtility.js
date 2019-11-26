@@ -1,10 +1,9 @@
 const fse = require('fs-extra');
 const path = require('path');
 
+// This class represents a JS version of a Java implementaiton that does the same thing: Read SVGs from the file system
 class InlineSvgUtility {
   async use() {
-    const assetsPath = 'assets/icons/';
-
     if (!this.svgPath) {
       return {
         title: 'SVG Example Error - Please provide svgPath',
@@ -12,10 +11,9 @@ class InlineSvgUtility {
       }
     }
 
-    const data = await fse.readFile(path.join(assetsPath, this.svgPath), 'utf-8');
+    const data = await fse.readFile(path.resolve(path.join('./', this.svgPath)), 'utf-8');
 
     return {
-      title: 'SVG Example',
       svgItem: data
     };
   }

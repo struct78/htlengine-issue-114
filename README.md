@@ -8,7 +8,7 @@ This is a simple sample code to demonstrate issue https://github.com/adobe/htlen
 ```bash
 npm run dev7
 ```
-- Use the following command to run code with @adobe/htlengine 3.2.8, which will throw an error unless you change path from 'inline-svg-utility.js' to '../../../../../inline-svg-utility.js' in example1.htl
+- Use the following command to run code with @adobe/htlengine 3.2.8, which will throw an error unless you change class name from 'com.companyname.classname.SvgUtility' to '../../../../../modules/com.companyname.classname.SvgUtility' in src/example.htl
 ```bash
 npm run dev8
 ```
