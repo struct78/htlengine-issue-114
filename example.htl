@@ -1,0 +1,8 @@
+<sly data-sly-use.svg="${'inline-svg-utility.js' @ svgPath='circle.svg'}"/>
+
+<!DOCTYPE html>
+<html><head><title>${svg.title}</title></head>
+<body>
+${svg.svgItem @ context='unsafe'}
+</body>
+</html>

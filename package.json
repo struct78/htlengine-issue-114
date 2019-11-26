@@ -1,0 +1,18 @@
+{
+  "name": "htlengine-issue-114",
+  "version": "1.0.0",
+  "description": "Sample code to show issue: https://github.com/adobe/htlengine/issues/114",
+  "main": "index.js",
+  "scripts": {
+    "dev7": "npm run build7 && npm start",
+    "dev8": "npm run build8 && npm start",
+    "start": "node index.js",
+    "clean": "rm -rf node_modules && npm remove @adobe/htlengine",
+    "build7": "npm run clean && npm install @adobe/htlengine@3.2.7",
+    "build8": "npm run clean && npm install @adobe/htlengine@3.2.8"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
